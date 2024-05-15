@@ -1,0 +1,155 @@
+INFO:scrapy.utils.log:Scrapy 2.11.1 started (bot: scrape_cook_books_dot_com)
+INFO:scrapy.utils.log:Versions: lxml 5.2.1.0, libxml2 2.12.6, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.7, Platform macOS-14.4.1-arm64-arm-64bit
+INFO:scrapy.utils.log:Scrapy 2.11.1 started (bot: scrape_cook_books_dot_com)
+INFO:scrapy.utils.log:Versions: lxml 5.2.1.0, libxml2 2.12.6, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.7, Platform macOS-14.4.1-arm64-arm-64bit
+INFO:scrapy.utils.log:Scrapy 2.11.1 started (bot: scrape_cook_books_dot_com)
+INFO:scrapy.utils.log:Versions: lxml 5.2.1.0, libxml2 2.12.6, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.7, Platform macOS-14.4.1-arm64-arm-64bit
+INFO:scrapy.utils.log:Scrapy 2.11.1 started (bot: scrape_cook_books_dot_com)
+INFO:scrapy.utils.log:Versions: lxml 5.2.1.0, libxml2 2.12.6, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.7, Platform macOS-14.4.1-arm64-arm-64bit
+INFO:scrapy.utils.log:Scrapy 2.11.1 started (bot: scrape_cook_books_dot_com)
+INFO:scrapy.utils.log:Versions: lxml 5.2.1.0, libxml2 2.12.6, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.7, Platform macOS-14.4.1-arm64-arm-64bit
+INFO:scrapy.utils.log:Scrapy 2.11.1 started (bot: scrape_cook_books_dot_com)
+INFO:scrapy.utils.log:Versions: lxml 5.2.2.0, libxml2 2.12.6, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.7, Platform macOS-14.4.1-arm64-arm-64bit
+INFO:scrapy.addons:Enabled addons:
+[]
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG:scrapy.utils.log:Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+INFO:scrapy.extensions.telnet:Telnet Password: 87e26c16f690c7ca
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'scrape_cook_books_dot_com',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 32,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'scrape_cook_books_dot_com.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scrape_cook_books_dot_com.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+[]
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6024
+DEBUG:scrapy.core.engine:Crawled (404) <GET https://cookbooks.com/robots.txt> (referer: None)
+DEBUG:protego:Rule at line 1 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 2 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 8 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 9 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 10 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 11 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 12 without any user agent to enforce it on.
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://cookbooks.com/Recipe-Details.aspx?id=1> (referer: None)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://cookbooks.com/Recipe-Details.aspx?id=1>
+{'directions': 'Combine crumbs, nuts, 3 tablespoons granulated sugar and '
+               'margarine.  Press onto bottom of 9-inch spring-form pan.  Bake '
+               'at 325° for 10 minutes.  Combine cream cheese and brown sugar, '
+               'mixing at medium speed with electric mixer until well '
+               'blended.  Add eggs, one at a time, mixing well after each.  '
+               'Blend in chocolate, milk, and vanilla extract; pour over '
+               'crust.  Bake at 325° for 35 minutes. Combine sour cream and 2 '
+               'tablespoons granulated sugar; carefully spread over '
+               'cheesecake.  Bake at 425° for 10 minutes.  Loosen cake from '
+               'rim of pan.  Cool before removing rim of pan.  Chill.  Garnish '
+               'with mint candies.',
+ 'ingredients': '1  c. vanilla wafer crumbs1/2  c. chopped pecans3  Tbsp. '
+                'granulated sugar1/2  c. Parkay margarine2 (8 oz.)  pkg. '
+                'Philadelphia cream cheese, softened1/2  c. packed brown '
+                'sugar2  eggs16  oz. pkg. semi-sweet chocolate pieces2  Tbsp. '
+                'milk1  tsp. vanilla extract2  c. sour cream2  Tbsp. '
+                'granulated sugar  mint candies (garnish)',
+ 'star_rating': 3,
+ 'title': 'CHOCOLATE VELVET CHEESECAKE',
+ 'total_votes': 1094,
+ 'url': 'https://cookbooks.com/Recipe-Details.aspx?id=1'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://cookbooks.com/Recipe-Details.aspx?id=2> (referer: None)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://cookbooks.com/Recipe-Details.aspx?id=5> (referer: None)
+WARNING:scrape_cook_books_dot_com.spiders.scrapecookbooksdotcom:No recipe for page found: https://cookbooks.com/Recipe-Details.aspx?id=2
+DEBUG:scrapy.core.scraper:Scraped from <200 https://cookbooks.com/Recipe-Details.aspx?id=5>
+{'directions': 'Melt chocolate and butter together in top of double boiler '
+               'over simmering hot water, stirring until smooth.  Add sugar '
+               'and milk. Continue stirring over water until well blended.  '
+               'Dissolve cornstarch in 2 tablespoons water.  Beat in egg yolks '
+               'and vanilla.',
+ 'ingredients': '6  oz. semi-sweet chocolate chips4  Tbsp. butter1/2  c. '
+                'sugar2  c. milk2  Tbsp. cornstarch3  eggs, separated2  tsp. '
+                'vanilla flavoring1  (9-inch) pie crust, baked  dash of cream '
+                'of tartar1/4  c. sugar',
+ 'star_rating': 3,
+ 'title': 'CHOCOLATE PIE',
+ 'total_votes': 1105,
+ 'url': 'https://cookbooks.com/Recipe-Details.aspx?id=5'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://cookbooks.com/Recipe-Details.aspx?id=3> (referer: None)
+DEBUG:scrapy.core.scraper:Scraped from <200 https://cookbooks.com/Recipe-Details.aspx?id=3>
+{'directions': 'Melt baking chocolate and let stand to cool.  Beat eggs until '
+               'very light.  Cream butter.  Gradually add sugar to the butter, '
+               'beating until light and fluffy.  Sift flour and salt together; '
+               'set aside.  Add the cooled chocolate and the eggs to the '
+               'creamed mixture.  Mix well.  Alternately add flour mixture and '
+               'milk (to which the vanilla has been added).  Stir in nuts.  '
+               'Pour into a greased 9-inch pie pan.  Bake at 375° for 45 to 50 '
+               'minutes.  Serve with ice cream, if desired.',
+ 'ingredients': '3  sq. baking chocolate3  eggs1/3  c. butter or margarine1 '
+                '1/2  c. granulated sugar3/4  c. all-purpose flour, sifted1/2  '
+                'tsp. salt1/3  c. milk1  tsp. vanilla1  c. chopped nuts',
+ 'star_rating': 3,
+ 'title': 'CHOCOLATE BROWNIE PIE',
+ 'total_votes': 916,
+ 'url': 'https://cookbooks.com/Recipe-Details.aspx?id=3'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://cookbooks.com/Recipe-Details.aspx?id=4> (referer: None)
+WARNING:scrape_cook_books_dot_com.spiders.scrapecookbooksdotcom:No recipe for page found: https://cookbooks.com/Recipe-Details.aspx?id=4
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.extensions.feedexport:Stored csv feed (3 items) in: cookbooksdotcom
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 1414,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 347477,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 5,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 3.114822,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 5, 14, 9, 43, 9, 830382, tzinfo=datetime.timezone.utc),
+ 'item_scraped_count': 3,
+ 'log_count/DEBUG': 19,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 68272128,
+ 'memusage/startup': 68272128,
+ 'response_received_count': 6,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2024, 5, 14, 9, 43, 6, 715560, tzinfo=datetime.timezone.utc)}
+INFO:scrapy.core.engine:Spider closed (finished)
