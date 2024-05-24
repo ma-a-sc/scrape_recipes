@@ -43,7 +43,7 @@ class ScrapecookbooksdotcomSpider(Spider):
                 self.close(self, reason="Finished!")
 
             index += 1
-
+            print(index)
             for result in json_data["response"]["results"]:
                 yield Request(result["record_url"], callback=self.parse, meta={"data": result})
 
