@@ -15,7 +15,7 @@ logging.basicConfig(filename="cookbooks_logs.txt", encoding="utf-8", level=loggi
 
 class ScrapecookbooksdotcomSpider(Spider):
     name = "scrape_food_dot_com"
-    allowed_domains = ["food.com"]
+    allowed_domains = ["www.food.com", "api.food.com"]
     start_urls = ["https://api.food.com/services/mobile/fdc/search/sectionfront?pn={}&recordType=Recipe&collectionId=17"]
 
     max_recipes = 0
