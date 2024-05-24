@@ -16,8 +16,7 @@ class ScrapecookbooksdotcomSpider(Spider):
     start_urls = ["https://cookbooks.com/Recipe-Details.aspx?id=1"]
 
     def start_requests(self) -> Iterable[Request]:
-        #for index in range(1, 1086400):
-        for index in range(1, 1000):
+        for index in range(1, 1086400):
             yield scrapy.Request(url="https://cookbooks.com/Recipe-Details.aspx?id={}".format(index), callback=self.parse)
 
     def parse(self, response):

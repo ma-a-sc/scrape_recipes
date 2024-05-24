@@ -22,7 +22,6 @@ def get_stars(rating_section) -> int:
     if "No votes have been cast!" in rating_section[0]:
         return 0
     star_rating = rating_section[0].split("</strong>")[0].split("<strong>")[1]
-    print(int(star_rating))
     return int(star_rating)
 
 
@@ -34,7 +33,6 @@ def get_votes(rating_section_selector) -> int:
     votes = votes[1:len(votes)-1]
 
     votes = votes.strip("votes casted").strip()
-    print(int(votes))
     return int(votes)
 
 
