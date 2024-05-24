@@ -23,7 +23,7 @@ def get_ingredients(ingredients):
 
 
 def get_servings(servings):
-    return int(servings[2].split('<span contenteditable="true" inputmode="numeric" class="value svelte-1o10zxc">')[1].split('</span>')[0])
+    return servings[2].split('<span contenteditable="true" inputmode="numeric" class="value svelte-1o10zxc">')[1].split('</span>')[0]
 
 
 def get_total_ingredients(total_ingredients):
@@ -41,7 +41,7 @@ class FoodDotComItem(scrapy.Item):
     recipe_preptime = scrapy.Field(serializer=int, output_processor=TakeFirst())
     recipe_cooktime = scrapy.Field(serializer=int, output_processor=TakeFirst())
     recipe_total_time = scrapy.Field(serializer=int, output_processor=TakeFirst())
-    servings = scrapy.Field(serializer=int, input_processor=get_servings, output_processor=TakeFirst())
+    servings = scrapy.Field(serializer=str, input_processor=get_servings, output_processor=TakeFirst())
     ingredients = scrapy.Field(serializer=str, input_processor=get_ingredients, output_processor=TakeFirst())
     total_number_of_ingredients = scrapy.Field(serializer=int, input_processor=get_total_ingredients, output_processor=TakeFirst())
     directions = scrapy.Field(serializer=str, input_processor=get_directions, output_processor=TakeFirst())
