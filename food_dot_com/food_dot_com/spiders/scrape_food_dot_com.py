@@ -28,23 +28,21 @@ class ScrapecookbooksdotcomSpider(Spider):
 
         return spider
 
-
-
     def start_requests(self) -> Iterable[Request]:
-        #index = 1
-        #while True:
-            data = request("get", self.start_urls[0].format(1))
+        index = 1
+        while True:
+            data = request("get", self.start_urls[0].format(index))
 
             if data.status_code != 200:
                 logger.warning(f"Request failed with status code {data.status_code} for url {data.url}")
-                #continue
+                continue
 
             json_data = json.loads(data.text)
 
             if int(json_data["response"]["parameters"]["offset"]) >= self.max_recipes - 10:
                 self.close(self, reason="Finished!")
 
-            #index += 1
+            index += 1
 
             for result in json_data["response"]["results"]:
                 yield Request(result["record_url"], callback=self.parse, meta={"data": result})

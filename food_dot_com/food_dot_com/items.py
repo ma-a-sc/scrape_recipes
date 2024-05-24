@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 def get_directions(directions):
     soup = BeautifulSoup(directions[0], 'html.parser')
     directions = [li.get_text(strip=True) for li in soup.select('ul.direction-list.svelte-1dqq0pw li.direction.svelte-1dqq0pw')]
-    return "-".join(directions)
+    return "---".join(directions)
 
 
 def get_ingredients(ingredients):
@@ -19,7 +19,7 @@ def get_ingredients(ingredients):
     ingredients = [li.get_text(strip=False) for li in
                    soup.select('ul.ingredient-list.svelte-1dqq0pw li[style="display: contents"]')]
     ingredients = [ingredient.strip('\n').replace("\n", "").replace("  ", " ").replace("   ", " ") for ingredient in ingredients]
-    return "-".join(ingredients)
+    return "---".join(ingredients)
 
 
 def get_servings(servings):
